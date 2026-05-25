@@ -3,128 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jugadores históricos y actuales de los Leones de Ponce.">
     <title>Jugadores - Leones de Ponce</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <nav>
-        <img src="img/logo.png" alt="Logo Leones de Ponce">
-        <a href="index.html">Inicio</a>
-        <a href="historia.html">Historia</a>
-        <a href="jugadores.html">Jugadores</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">
+                <img src="img/logo.png" alt="Logo Leones de Ponce" width="40" height="40">
+                Leones de Ponce
+            </a>
+            <button type="button" class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="jugadores.html" class="active">Jugadores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <div class="page-title">
         <h1>Jugadores</h1>
-        <p>Los mejores anotadores en la historia de los Leones de Ponce</p>
+        <p>Máximos anotadores y roster 2026</p>
     </div>
 
-    <section>
-        <h2>Máximos Anotadores de Todos los Tiempos</h2>
-        <p>Estos son los jugadores con más puntos en toda la historia de la franquicia.</p>
+    <div class="site-layout">
 
-        <div class="img-section">
-            <img src="img/alltime_pts.jpg" alt="All Time Points Leones de Ponce">
-        </div>
+        <aside class="col-sidebar">
+            <div class="sidebar-box">
+                <h3>Menú</h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="jugadores.html">Jugadores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="referencias.html">Referencias</a></li>
+                </ul>
+            </div>
+        </aside>
 
-        <table>
-            <tr>
-                <th>#</th>
-                <th>Jugador</th>
-                <th>Puntos</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Javier Antonio "Toñito" Colón</td>
-                <td>6,849</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Roberto "Bobby" Ríos</td>
-                <td>6,508</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>José "Papote" Agosto</td>
-                <td>6,408</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>José Andrés "Josean" Baéz</td>
-                <td>5,912</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Michael Vicéns</td>
-                <td>5,258</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Juan "Pachín" Vicéns</td>
-                <td>5,102</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Francisco "Papiro" León</td>
-                <td>3,990</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Joe Hatton</td>
-                <td>3,796</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Tomás "Guabina" Gutiérrez</td>
-                <td>3,483</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Carlos "Charlie" Lanauze</td>
-                <td>3,329</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>Angel Daniel Vassallo</td>
-                <td>3,097</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>Jezreel "Macho" De Jesús</td>
-                <td>2,929</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>Roberto "Bobby Joe" Hatton</td>
-                <td>2,913</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>Eddie Casiano</td>
-                <td>2,709</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>Gabriel "Pirulo" Colón</td>
-                <td>2,705</td>
-            </tr>
-        </table>
-    </section>
+        <main class="col-main" id="contenido-principal">
 
-    <section>
-        <h2>Jugadores Destacados Actuales</h2>
-        <p>
-            En la temporada 2026, los Leones cuentan con jugadores como Jezreel "Macho" De Jesús, 
-            Terence Davis, Jordan Murphy, Johned Walker, Christian Negrón y Jalen Crutcher, 
-            bajo la dirección del coach Carlos Rivera.
-        </p>
-    </section>
+            <section>
+                <h2>Top 3 Anotadores</h2>
+                <ol>
+                    <li><strong>Toñito Colón</strong> - 6,849 puntos</li>
+                    <li><strong>Bobby Ríos</strong> - 6,508 puntos</li>
+                    <li><strong>Papote Agosto</strong> - 6,408 puntos</li>
+                </ol>
+
+                    <div class="img-section">
+                        <img src="img/alltime_pts.jpg" alt="Gráfico de los máximos anotadores históricos">
+                    </div>
+            </section>
+
+            <!-- Tabla con datos de jugadores -->
+            <section>
+                <h2>Tabla de Anotadores</h2>
+                <p>Los 15 jugadores con más puntos en la historia del equipo:</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Top 15 anotadores en la historia de los Leones de Ponce</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Jugador</th>
+                                <th scope="col">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Toñito Colón</td>
+                                <td>6,849</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Bobby Ríos</td>
+                                <td>6,508</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Papote Agosto</td>
+                                <td>6,408</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Josean Báez</td>
+                                <td>5,912</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Michael Vicéns</td>
+                                <td>5,258</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Pachín Vicéns</td>
+                                <td>5,102</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Papiro León</td>
+                                <td>3,990</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Joe Hatton</td>
+                                <td>3,796</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Guabina Gutiérrez</td>
+                                <td>3,483</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Charlie Lanauze</td>
+                                <td>3,329</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Ángel Daniel Vassallo</td>
+                                <td>3,097</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Macho De Jesús</td>
+                                <td>2,929</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Bobby Joe Hatton</td>
+                                <td>2,913</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Eddie Casiano</td>
+                                <td>2,709</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Pirulo Colón</td>
+                                <td>2,705</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>Roster 2026</h2>
+                <p>Plantilla bajo el coach Carlos Rivera:</p>
+                <ul>
+                    <li>#00 - Macho De Jesús (Base/Escolta)</li>
+                    <li>#1 - Terence Davis (Escolta)</li>
+                    <li>#4 - Jordan Murphy (Ala-Pívot)</li>
+                    <li>#7 - Johned Walker (Escolta)</li>
+                    <li>#11 - Christian Negrón (Ala)</li>
+                    <li>#3 - Jalen Crutcher (Base)</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <aside class="col-sidebar col-sidebar--right">
+            <div class="sidebar-box">
+                <h3>Top Anotador</h3>
+                <p class="u-mb-0">Toñito Colón lidera con 6,849 puntos.</p>
+            </div>
+        </aside>
+
+    </div>
 
     <footer>
-        <p>&copy; 2026 Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <p>Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="jugadores.html">Jugadores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+        <p>&copy; 2026 - Proyecto universitario</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>

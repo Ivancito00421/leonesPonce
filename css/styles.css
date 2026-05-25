@@ -1,0 +1,413 @@
+/* ===================================================
+   Proyecto Final - Leones de Ponce BSN
+   Archivo: css/styles.css
+   Descripcion: Hoja de estilos principal del sitio web
+   =================================================== */
+
+/* --- Variables globales --- */
+:root {
+    --color-fondo: #1a1a1a;
+    --color-fondo-seccion: #2a2a2a;
+    --color-fondo-caja: #333333;
+    --color-texto: #eeeeee;
+    --color-texto-claro: #aaaaaa;
+    --color-rojo: #cc0000;
+    --color-rojo-claro: #ff4444;
+    --color-borde: #444444;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --ancho-maximo: 1000px;
+    --espacio: 15px;
+    --fuente-principal: Arial, Helvetica, sans-serif;
+}
+
+/* --- Propiedades globales y reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--color-rojo-claro);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Clases utilitarias --- */
+.u-text-center {
+    text-align: center;
+}
+
+.u-mb-0 {
+    margin-bottom: 0;
+}
+
+/* --- Encabezado y menu de navegacion --- */
+header {
+    background-color: var(--color-negro);
+    border-bottom: 4px solid var(--color-rojo);
+    padding: 10px var(--espacio);
+}
+
+.navbar {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav-brand {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-brand img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.nav-toggle {
+    display: none;
+    background: var(--color-rojo);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: var(--color-fondo-caja);
+    color: var(--color-blanco);
+}
+
+/* --- Titulo de cada pagina --- */
+.page-title {
+    background-color: var(--color-fondo-seccion);
+    text-align: center;
+    padding: 30px var(--espacio);
+    border-bottom: 2px solid var(--color-rojo);
+}
+
+.page-title h1 {
+    margin: 0;
+    color: var(--color-blanco);
+}
+
+.page-title p {
+    margin: 10px 0 0 0;
+    color: var(--color-texto-claro);
+}
+
+/* --- Layout de 3 columnas (requisito del proyecto) --- */
+.site-layout {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: var(--espacio);
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: var(--espacio);
+    align-items: start;
+}
+
+.col-main {
+    min-width: 0;
+}
+
+.sidebar-box {
+    background-color: var(--color-fondo-seccion);
+    border: 1px solid var(--color-borde);
+    padding: 12px;
+    margin-bottom: var(--espacio);
+}
+
+.sidebar-box h3 {
+    margin-top: 0;
+    color: var(--color-rojo);
+    font-size: 16px;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 5px;
+}
+
+.sidebar-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* --- Contenido principal --- */
+section {
+    background-color: var(--color-fondo-seccion);
+    border: 1px solid var(--color-borde);
+    padding: var(--espacio);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--color-blanco);
+    border-bottom: 2px solid var(--color-rojo);
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--color-rojo-claro);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* --- Tarjetas con datos del equipo --- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--color-fondo-caja);
+    border: 1px solid #555555;
+    padding: var(--espacio);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin: 0;
+    color: var(--color-blanco);
+}
+
+.card p {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+}
+
+/* --- Lista de campeonatos --- */
+.championship-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.championship-list li {
+    display: inline-block;
+    background-color: var(--color-fondo-caja);
+    border: 1px solid #555555;
+    padding: 8px 15px;
+    margin: 3px;
+}
+
+/* --- Imagenes --- */
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espacio);
+}
+
+.img-section {
+    margin: 0;
+}
+
+.img-section img {
+    border: 1px solid #555555;
+    width: 100%;
+}
+
+/* --- Video de YouTube embebido --- */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+    background: var(--color-negro);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-nota {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color-texto-claro);
+}
+
+/* --- Linea de tiempo en historia --- */
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    border-bottom: 1px solid var(--color-borde);
+    padding: 10px 0;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: var(--color-rojo);
+    display: inline-block;
+    width: 60px;
+}
+
+/* --- Tabla de jugadores --- */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    caption-side: top;
+    text-align: left;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    border: 1px solid #555555;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #660000;
+    color: var(--color-blanco);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--color-fondo-caja);
+}
+
+/* --- Cajas de informacion en contacto --- */
+.info-box {
+    background-color: var(--color-fondo-caja);
+    border: 1px solid #555555;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+/* --- Lista de referencias --- */
+.ref-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ref-list li {
+    border-bottom: 1px solid var(--color-borde);
+    padding: 10px 0;
+}
+
+/* --- Pie de pagina --- */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid var(--color-rojo);
+    margin-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 8px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/* --- Media queries: diseno responsive --- */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        clear: both;
+    }
+
+    .nav-links.open {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .site-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .col-sidebar,
+    .col-sidebar--right {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+}

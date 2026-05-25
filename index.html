@@ -3,75 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio informativo sobre los Leones de Ponce, equipo del Baloncesto Superior Nacional de Puerto Rico.">
     <title>Leones de Ponce - BSN</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <nav>
-        <img src="img/logo.png" alt="Logo Leones de Ponce">
-        <a href="index.html">Inicio</a>
-        <a href="historia.html">Historia</a>
-        <a href="jugadores.html">Jugadores</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <!-- Encabezado con navegacion principal -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">
+                <img src="img/logo.png" alt="Logo Leones de Ponce" width="40" height="40">
+                Leones de Ponce
+            </a>
+            <button type="button" class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero">
-        <img src="img/logo.png" alt="Leones de Ponce">
+    <!-- Titulo de la pagina de inicio -->
+    <div class="page-title">
         <h1>Leones de Ponce</h1>
-        <p>14 veces Campeones del Baloncesto Superior Nacional de Puerto Rico</p>
+        <p>Baloncesto Superior Nacional - Ponce, Puerto Rico</p>
     </div>
 
-    <section>
-        <h2>Sobre el Equipo</h2>
-        <p>
-            Los Leones de Ponce son uno de los equipos más exitosos y queridos del Baloncesto Superior Nacional (BSN) de Puerto Rico. 
-            Fundados en el año 1946, los Leones han ganado un total de 14 campeonatos y se han convertido en un símbolo del orgullo 
-            ponceño y boricua.
-        </p>
-        <p>
-            Sus colores oficiales son el negro, blanco y rojo. Sus partidos locales se celebran en el 
-            Auditorio Juan "Pachín" Vicéns, ubicado en la Ciudad Señorial de Ponce, Puerto Rico.
-        </p>
+    <!-- Layout de 3 columnas: sidebar izquierda, contenido, sidebar derecha -->
+    <div class="site-layout">
 
-        <div class="cards">
-            <div class="card">
-                <h3>1946</h3>
-                <p>Año de Fundación</p>
+        <aside class="col-sidebar">
+            <div class="sidebar-box">
+                <h3>Menú</h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="jugadores.html">Jugadores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="referencias.html">Referencias</a></li>
+                </ul>
             </div>
-            <div class="card">
-                <h3>14</h3>
-                <p>Campeonatos BSN</p>
+            <div class="sidebar-box">
+                <h3>Datos</h3>
+                <p><strong>Fundación:</strong> 1946</p>
+                <p><strong>Campeonatos:</strong> 14</p>
+                <p><strong>Colores:</strong> Rojo, negro y blanco</p>
             </div>
-            <div class="card">
-                <h3>8,000</h3>
-                <p>Capacidad del Auditorio</p>
-            </div>
-            <div class="card">
-                <h3>+1,000</h3>
-                <p>Victorias en temporada regular</p>
-            </div>
-        </div>
-    </section>
+        </aside>
 
-    <section>
-        <h2>Calendario 2026</h2>
-        <p>Mira los juegos de la temporada 2026. ¡Apoya a los Leones en casa y de visitante!</p>
+        <main class="col-main" id="contenido-principal">
 
-        <div class="img-section">
-            <p><strong>Juegos Locales</strong></p>
-            <img src="img/calendario_local.jpg" alt="Calendario Locales 2026">
-        </div>
+            <section>
+                <h2>Sobre el Equipo</h2>
+                <p>
+                    Los Leones de Ponce son uno de los equipos más exitosos del Baloncesto Superior Nacional (BSN)
+                    de Puerto Rico. Fueron fundados en 1946 y han ganado 14 campeonatos.
+                </p>
+                <p>
+                    Sus colores son el negro, blanco y rojo. Juegan en el Auditorio Juan "Pachín" Vicéns
+                    en Ponce, Puerto Rico.
+                </p>
 
-        <div class="img-section">
-            <p><strong>Juegos Visitantes</strong></p>
-            <img src="img/calendario_visitante.jpg" alt="Calendario Visitantes 2026">
-        </div>
-    </section>
+                <div class="cards">
+                    <div class="card">
+                        <h3>1946</h3>
+                        <p>Fundación</p>
+                    </div>
+                    <div class="card">
+                        <h3>14</h3>
+                        <p>Campeonatos</p>
+                    </div>
+                    <div class="card">
+                        <h3>8000</h3>
+                        <p>Capacidad</p>
+                    </div>
+                    <div class="card">
+                        <h3>1000+</h3>
+                        <p>Victorias</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Calendario 2026</h2>
+                <p>Calendario de juegos de la temporada 2026:</p>
+
+                <div class="img-grid">
+                    <div class="img-section">
+                        <p><strong>Juegos locales</strong></p>
+                        <img src="img/calendario_local.jpg" alt="Calendario de juegos locales de los Leones de Ponce" width="400" height="300">
+                    </div>
+                    <div class="img-section">
+                        <p><strong>Juegos visitantes</strong></p>
+                        <img src="img/calendario_visitante.jpg" alt="Calendario de juegos visitantes de los Leones de Ponce" width="400" height="300">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seccion multimedia: video de YouTube -->
+            <section>
+                <h2>Video</h2>
+                <p>Video sobre la historia de los Leones de Ponce:</p>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/9DJLrfwHzp4?rel=0"
+                        title="Historia de los Leones de Ponce en el BSN"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+                <p class="video-nota">
+                    Si el video no carga, ábrelo en
+                    <a href="https://www.youtube.com/watch?v=9DJLrfwHzp4" target="_blank">YouTube</a>.
+                    (Al abrir el archivo local a veces YouTube no funciona; en la web publicada sí.)
+                </p>
+            </section>
+
+            <section>
+                <h2>Años de Campeonato</h2>
+                <ul class="championship-list">
+                    <li>1952</li>
+                    <li>1954</li>
+                    <li>1955</li>
+                    <li>1960</li>
+                    <li>1964</li>
+                    <li>1965</li>
+                    <li>1966</li>
+                    <li>1990</li>
+                    <li>1992</li>
+                    <li>1993</li>
+                    <li>2002</li>
+                    <li>2004</li>
+                    <li>2014</li>
+                    <li>2015</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <aside class="col-sidebar col-sidebar--right">
+            <div class="sidebar-box">
+                <h3>Auditorio</h3>
+                <p>Juan "Pachín" Vicéns</p>
+                <p class="u-mb-0">Capacidad: 8,000</p>
+            </div>
+            <div class="sidebar-box">
+                <h3>Enlaces</h3>
+                <ul class="sidebar-links">
+                    <li><a href="referencias.html">Referencias</a></li>
+                    <li><a href="https://leonesponcebsn.com" target="_blank">Sitio oficial</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
 
     <footer>
-        <p>&copy; 2026 Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <p>Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="jugadores.html">Jugadores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+        <p>&copy; 2026 - Proyecto universitario</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>

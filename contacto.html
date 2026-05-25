@@ -3,69 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información de contacto de los Leones de Ponce.">
     <title>Contacto - Leones de Ponce</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <nav>
-        <img src="img/logo.png" alt="Logo Leones de Ponce">
-        <a href="index.html">Inicio</a>
-        <a href="historia.html">Historia</a>
-        <a href="jugadores.html">Jugadores</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">
+                <img src="img/logo.png" alt="Logo Leones de Ponce" width="40" height="40">
+                Leones de Ponce
+            </a>
+            <button type="button" class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <div class="page-title">
         <h1>Contacto</h1>
-        <p>Información del equipo y la cancha</p>
+        <p>Información del equipo</p>
     </div>
 
-    <section>
-        <h2>Información de Contacto</h2>
+    <div class="site-layout">
 
-        <div class="info-box">
-            <h3>Dirección</h3>
-            <p>Auditorio Juan "Pachín" Vicéns</p>
-            <p>Calle Eduardo Ruberte</p>
-            <p>Ponce, Puerto Rico 00716</p>
-        </div>
+        <aside class="col-sidebar">
+            <div class="sidebar-box">
+                <h3>Menú</h3>
+                <ul class="sidebar-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="jugadores.html">Jugadores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="referencias.html">Referencias</a></li>
+                </ul>
+            </div>
+        </aside>
 
-        <div class="info-box">
-            <h3>Teléfono</h3>
-            <p>787-692-2023</p>
-        </div>
+        <main class="col-main" id="contenido-principal">
 
-        <div class="info-box">
-            <h3>Redes Sociales</h3>
-            <p>Facebook: Leones de Ponce BSN (@LeonesPonceBSN)</p>
-            <p>Web Oficial: leonesponcebsn.com</p>
-        </div>
+            <section>
+                <h2>Información de Contacto</h2>
 
-        <div class="info-box">
-            <h3>Sobre el Auditorio</h3>
-            <p>
-                El Auditorio Juan "Pachín" Vicéns tiene capacidad para aproximadamente 8,000 espectadores. 
-                Fue nombrado en honor a Juan Pachín Vicéns, uno de los mejores jugadores en la historia 
-                del baloncesto puertorriqueño y figura icónica de los Leones de Ponce.
-            </p>
-        </div>
-    </section>
+                <div class="info-box">
+                    <h3>Dirección</h3>
+                    <p>Auditorio Juan "Pachín" Vicéns</p>
+                    <p>Calle Eduardo Ruberte</p>
+                    <p>Ponce, Puerto Rico 00716</p>
+                </div>
 
-    <section>
-        <h2>Liga</h2>
-        <div class="info-box">
-            <h3>Baloncesto Superior Nacional (BSN)</h3>
-            <p>Los Leones de Ponce compiten en el Baloncesto Superior Nacional, la liga profesional de 
-            baloncesto de Puerto Rico.</p>
-            <p>Colores del equipo: Rojo, Negro y Blanco</p>
-            <p>Apodo: Los Selváticos / Los Rojinegros</p>
-        </div>
-    </section>
+                <div class="info-box">
+                    <h3>Teléfono</h3>
+                    <p>787-692-2023</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Correo Electrónico</h3>
+                    <p>info@leonesponcebsn.com</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Horario de Taquilla</h3>
+                    <p>Lunes a viernes: 9:00 AM - 5:00 PM</p>
+                    <p>Días de juego: 2 horas antes del partido</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Redes Sociales</h2>
+                <p>Facebook: Leones de Ponce BSN (@LeonesPonceBSN)</p>
+                <p>Sitio web: <a href="https://leonesponcebsn.com" target="_blank">leonesponcebsn.com</a></p>
+            </section>
+
+            <section>
+                <h2>Sobre el Auditorio</h2>
+                <p>
+                    El Auditorio Juan "Pachín" Vicéns tiene capacidad para unos 8,000 espectadores.
+                    Fue nombrado en honor a Pachín Vicéns, leyenda de los Leones de Ponce.
+                </p>
+            </section>
+
+        </main>
+
+        <aside class="col-sidebar col-sidebar--right">
+            <div class="sidebar-box">
+                <h3>Horario</h3>
+                <p class="u-mb-0">Lunes a viernes: 9:00 AM - 5:00 PM</p>
+            </div>
+        </aside>
+
+    </div>
 
     <footer>
-        <p>&copy; 2026 Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <p>Leones de Ponce BSN - Ponce, Puerto Rico</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="jugadores.html">Jugadores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+        <p>&copy; 2026 - Proyecto universitario</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
