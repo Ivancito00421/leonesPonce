@@ -155,10 +155,12 @@ header {
     margin-bottom: var(--espacio);
 }
 
-.sidebar-box h3 {
+.sidebar-box h2 {
     margin-top: 0;
     color: var(--color-rojo);
     font-size: 16px;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .sidebar-links {
